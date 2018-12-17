@@ -133,3 +133,14 @@ body {
 .muted{
   color:gray;
 }
+
+
+.btn{
+  margin-bottom: 40px;
+}
+
+
+td:nth-child(1) {  
+  text-transform: capitalize;
+  font-weight: 300;
+}
