@@ -59,15 +59,15 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-                <h1>Ծրագրավորողի ընդունակությունների աղյուսակ</h1>
+                <h1>Ծրագրավորողի ընդունակությունների և գիտելիքնրի աղյուսակ</h1>
                 <p>Յուրաքանչյուր մակարդակում պահանջվող գիտելիքներն իրենց մեջ ներառում են նախորդ մակարդակի համար
                     անհրաժեշտ գիտելիքները: <br> n մակարդակում գտնվելը նշանակում է, որ դուք գիտեք այն ամենը, ինչ
                     պահանջվում է n-ից ցածր մակարդակների համար:</p>
                 <!-- <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p> -->
-                <a href="#menu-toggle" class="btn btn-primary" id="menu-toggle">« Բացել ցանկը</a>
+                <a href="#menu-toggle" class="btn btn-primary" id="menu-toggle">« Ցանկը</a>
 
                 <h2 id="programming">Ծրագրավորում</h2>
-                <table class="table">
+                <table class="table table-stripped">
                     <thead>
                         <td>#</td>
                         <td>2<sup>n</sup> <span class="muted">(մակարդակ 0)</span></td>
@@ -520,10 +520,23 @@
 
     <script>
         $(document).ready(function () {
+            $("#wrapper").toggleClass("toggled");
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
 
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19637053-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </body>
 
 </html>
